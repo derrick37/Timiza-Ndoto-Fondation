@@ -1,9 +1,13 @@
-Timiza Ndoto Foundation — Condensed Website
+Timiza Ndoto Foundation — Clickable Stories Update
 
-This version is intentionally shorter and uses four main desktop scroll sections:
-1. Hero
-2. Delvin's story
-3. The foundation's three areas of work
-4. Support, Instagram and footer
+Main-page cards now use one lead image each:
+- Football Academy: team-photo-1.jpg
+- Women Empowerment: women-aid.jpg
+- Village Tournaments: handing-out-food.jpg
 
-Upload all files in this folder to the root of your GitHub repository. Replace the old index.html and styles.css with these versions.
+Each card links to a short story page containing all relevant photographs:
+- academy-story.html
+- women-story.html
+- tournaments-story.html
+
+Upload every file in this folder to the root of the GitHub repository. Replace index.html and styles.css when GitHub asks.
