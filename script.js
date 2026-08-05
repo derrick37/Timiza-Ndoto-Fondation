@@ -23,25 +23,22 @@ menuButton?.addEventListener('click', () => {
   nav?.classList.toggle('open', !open);
   document.body.classList.toggle('menu-open', !open);
 });
-
 nav?.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
-window.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape') closeMenu();
-});
+window.addEventListener('keydown', (event) => { if (event.key === 'Escape') closeMenu(); });
 
 const revealItems = document.querySelectorAll('.reveal');
 if (reducedMotion || !('IntersectionObserver' in window)) {
   revealItems.forEach((item) => item.classList.add('is-visible'));
 } else {
-  const revealObserver = new IntersectionObserver((entries, observer) => {
+  const observer = new IntersectionObserver((entries, obs) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
+        obs.unobserve(entry.target);
       }
     });
   }, { threshold: 0.14 });
-  revealItems.forEach((item) => revealObserver.observe(item));
+  revealItems.forEach((item) => observer.observe(item));
 }
 
 document.querySelector('[data-year]').textContent = new Date().getFullYear();
