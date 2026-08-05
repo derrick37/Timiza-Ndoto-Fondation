@@ -195,7 +195,12 @@ blockquote {
       rgba(244, 162, 28, 0.16),
       transparent 23%
     ),
-    linear-gradient(135deg, #07102b, #0d1737 58%, #050a1d);
+    linear-gradient(
+      135deg,
+      #07102b,
+      #0d1737 58%,
+      #050a1d
+    );
 }
 
 .hero::before {
@@ -349,7 +354,9 @@ blockquote {
 
 .founder {
   display: grid;
-  grid-template-columns: minmax(380px, 0.95fr) minmax(0, 1.05fr);
+  grid-template-columns:
+    minmax(380px, 0.95fr)
+    minmax(0, 1.05fr);
   gap: clamp(3rem, 7vw, 7rem);
   align-items: center;
   padding:
@@ -466,14 +473,6 @@ blockquote {
   text-decoration: none;
 }
 
-/*
-These are the images on the three landing-page cards.
-
-The photographs fill the fixed card-image area.
-The crop begins at the top and cuts off only the lower
-part that does not fit.
-*/
-
 .work-image {
   height: 30vh;
   min-height: 220px;
@@ -488,6 +487,21 @@ part that does not fit.
   object-position: center top;
   transform-origin: center top;
   transition: transform 0.45s ease;
+}
+
+/* Card 1: Academy */
+.work-grid > .work-card:nth-child(1) .work-image img {
+  object-position: center 18%;
+}
+
+/* Card 2: Women empowerment */
+.work-grid > .work-card:nth-child(2) .work-image img {
+  object-position: center 32%;
+}
+
+/* Card 3: Village tournaments */
+.work-grid > .work-card:nth-child(3) .work-image img {
+  object-position: center 38%;
 }
 
 .work-card:hover .work-image img,
@@ -661,7 +675,12 @@ part that does not fit.
       rgba(244, 162, 28, 0.18),
       transparent 24%
     ),
-    linear-gradient(135deg, #07102b, #0d1737 62%, #050a1d);
+    linear-gradient(
+      135deg,
+      #07102b,
+      #0d1737 62%,
+      #050a1d
+    );
   color: var(--white);
   padding:
     clamp(4.5rem, 8vw, 8rem)
