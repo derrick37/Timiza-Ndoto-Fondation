@@ -317,15 +317,15 @@ h1,h2,h3,blockquote { font-family: "Oswald", sans-serif; text-transform: upperca
 }
 /* Academy card */
 .work-card:nth-child(1) .work-image img {
-  object-position: center 25%;
+  object-position: center 25% 10%;
 }
 
 /* Women empowerment card */
 .work-card:nth-child(2) .work-image img {
-  object-position: center 35%;
+  object-position: center 35% 10%;
 }
 
 /* Tournament card */
 .work-card:nth-child(3) .work-image img {
-  object-position: center 45%;
+  object-position: center 45% 10%;
 }
