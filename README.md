@@ -1,13 +1,8 @@
-Timiza Ndoto Foundation — Clickable Stories Update
+Timiza Ndoto Foundation — Updated Story Page Layout
 
-Main-page cards now use one lead image each:
-- Football Academy: team-photo-1.jpg
-- Women Empowerment: women-aid.jpg
-- Village Tournaments: handing-out-food.jpg
+Changes:
+- Story pages now use two alternating image-and-text sections inspired by the structure of the referenced charity page.
+- The Timiza Ndoto navy, gold and cream colour scheme remains unchanged.
+- Underlines have been removed from all clickable programme cards on the landing page.
 
-Each card links to a short story page containing all relevant photographs:
-- academy-story.html
-- women-story.html
-- tournaments-story.html
-
-Upload every file in this folder to the root of the GitHub repository. Replace index.html and styles.css when GitHub asks.
+Upload all files to the root of your GitHub repository. Replace the existing index.html, styles.css and the three story HTML files.
