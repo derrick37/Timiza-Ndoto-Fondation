@@ -61,8 +61,6 @@ a {
   top: 1rem;
 }
 
-/* Header */
-
 .site-header {
   position: fixed;
   inset: 0 0 auto;
@@ -126,8 +124,6 @@ a {
 .menu-button {
   display: none;
 }
-
-/* Shared */
 
 .screen {
   min-height: 100svh;
@@ -470,10 +466,9 @@ blockquote {
 .work-card:focus,
 .work-card:focus-visible,
 .work-card * {
-  text-decoration: none;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
 }
-
-/* Taller landing-page card images */
 
 .work-image {
   height: 40vh;
@@ -487,28 +482,51 @@ blockquote {
   height: 100%;
   object-fit: cover;
   object-position: center top;
-  transform-origin: center top;
+  transform-origin: center center;
   transition: transform 0.45s ease;
 }
 
 /* Card 1: Academy */
+
 .work-grid > .work-card:nth-child(1) .work-image img {
   object-position: center 18%;
 }
 
-/* Card 2: Women empowerment */
+/*
+Card 2: Women Empowerment
+
+The photograph is centred and enlarged so the visible crop
+focuses approximately on the middle half of the original image:
+from one-quarter to three-quarters of its height.
+
+The horizontal crop expands equally from the centre to the card edges.
+*/
+
 .work-grid > .work-card:nth-child(2) .work-image img {
-  object-position: center 50%;
+  object-position: center center;
+  transform: scale(1.32);
 }
 
 /* Card 3: Village tournaments */
+
 .work-grid > .work-card:nth-child(3) .work-image img {
   object-position: center 38%;
 }
 
-.work-card:hover .work-image img,
-.work-card:focus-visible .work-image img {
+/* Hover effect for cards 1 and 3 */
+
+.work-grid > .work-card:nth-child(1):hover .work-image img,
+.work-grid > .work-card:nth-child(1):focus-visible .work-image img,
+.work-grid > .work-card:nth-child(3):hover .work-image img,
+.work-grid > .work-card:nth-child(3):focus-visible .work-image img {
   transform: scale(1.035);
+}
+
+/* Keep the Women Empowerment crop when hovering */
+
+.work-grid > .work-card:nth-child(2):hover .work-image img,
+.work-grid > .work-card:nth-child(2):focus-visible .work-image img {
+  transform: scale(1.36);
 }
 
 .work-copy {
@@ -543,7 +561,7 @@ blockquote {
   font-size: 0.72rem;
 }
 
-/* Join */
+/* Join section */
 
 .join {
   min-height: 100svh;
@@ -920,7 +938,7 @@ blockquote {
 
 /* Mobile */
 
-@media (max-width: 700px) {
+@media (max-width: 720px) {
   :root {
     --header-h: 72px;
   }
