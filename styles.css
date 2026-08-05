@@ -345,7 +345,7 @@ blockquote {
   left: 31%;
 }
 
-/* Founder story */
+/* Founder */
 
 .founder {
   display: grid;
@@ -409,7 +409,7 @@ blockquote {
   font-size: clamp(1.9rem, 3vw, 3.1rem);
 }
 
-/* Work cards */
+/* Landing-page story cards */
 
 .work {
   display: flex;
@@ -451,12 +451,6 @@ blockquote {
 }
 
 .work-card:hover,
-.work-card:focus,
-.work-card:focus-visible {
-  text-decoration: none;
-}
-
-.work-card:hover,
 .work-card:focus-visible {
   transform: translateY(-7px);
   border-color: var(--gold);
@@ -464,15 +458,20 @@ blockquote {
   outline: none;
 }
 
+.work-card,
+.work-card:hover,
+.work-card:focus,
+.work-card:focus-visible,
 .work-card * {
   text-decoration: none;
 }
 
 /*
-The image fills the available card area.
+These are the images on the three landing-page cards.
 
-object-position: center top makes the visible crop begin
-at the top of the original photograph.
+The photographs fill the fixed card-image area.
+The crop begins at the top and cuts off only the lower
+part that does not fit.
 */
 
 .work-image {
@@ -528,7 +527,7 @@ at the top of the original photograph.
   font-size: 0.72rem;
 }
 
-/* Join section */
+/* Join */
 
 .join {
   min-height: 100svh;
@@ -566,7 +565,7 @@ at the top of the original photograph.
   margin-top: 2rem;
 }
 
-/* Main footer */
+/* Footer */
 
 .site-footer {
   display: grid;
@@ -599,7 +598,7 @@ at the top of the original photograph.
   justify-self: end;
 }
 
-/* Reveal animation */
+/* Animation */
 
 .reveal {
   opacity: 0;
@@ -656,22 +655,17 @@ at the top of the original photograph.
 }
 
 .programme-story-hero {
-  padding:
-    clamp(4.5rem, 8vw, 8rem)
-    clamp(1.2rem, 6vw, 7rem);
-  color: var(--white);
   background:
     radial-gradient(
       circle at 85% 20%,
       rgba(244, 162, 28, 0.18),
       transparent 24%
     ),
-    linear-gradient(
-      135deg,
-      #07102b,
-      #0d1737 62%,
-      #050a1d
-    );
+    linear-gradient(135deg, #07102b, #0d1737 62%, #050a1d);
+  color: var(--white);
+  padding:
+    clamp(4.5rem, 8vw, 8rem)
+    clamp(1.2rem, 6vw, 7rem);
 }
 
 .programme-story-hero-inner {
