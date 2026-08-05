@@ -498,7 +498,7 @@ blockquote {
 
 /* Card 2: Women empowerment */
 .work-grid > .work-card:nth-child(2) .work-image img {
-  object-position: center 70%;
+  object-position: center 100%;
 }
 
 /* Card 3: Village tournaments */
