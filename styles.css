@@ -506,7 +506,7 @@ inside the card, revealing more of the top and the person's head.
 
 .work-grid > .work-card:nth-child(2) .work-image img {
   object-position: center center;
-  transform: translateY(15%) scale(1.32);
+  transform: translateY(60%) scale(1.32);
 }
 
 /* Card 3: Village tournaments */
