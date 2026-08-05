@@ -61,6 +61,8 @@ a {
   top: 1rem;
 }
 
+/* Header */
+
 .site-header {
   position: fixed;
   inset: 0 0 auto;
@@ -124,6 +126,8 @@ a {
 .menu-button {
   display: none;
 }
+
+/* Shared */
 
 .screen {
   min-height: 100svh;
@@ -495,16 +499,14 @@ blockquote {
 /*
 Card 2: Women Empowerment
 
-The photograph is centred and enlarged so the visible crop
-focuses approximately on the middle half of the original image:
-from one-quarter to three-quarters of its height.
-
-The horizontal crop expands equally from the centre to the card edges.
+The image is enlarged around its centre.
+The positive translateY value moves the photograph downward
+inside the card, revealing more of the top and the person's head.
 */
 
 .work-grid > .work-card:nth-child(2) .work-image img {
   object-position: center center;
-  transform: scale(1.32);
+  transform: translateY(15%) scale(1.32);
 }
 
 /* Card 3: Village tournaments */
@@ -526,7 +528,7 @@ The horizontal crop expands equally from the centre to the card edges.
 
 .work-grid > .work-card:nth-child(2):hover .work-image img,
 .work-grid > .work-card:nth-child(2):focus-visible .work-image img {
-  transform: scale(1.36);
+  transform: translateY(15%) scale(1.36);
 }
 
 .work-copy {
@@ -561,7 +563,7 @@ The horizontal crop expands equally from the centre to the card edges.
   font-size: 0.72rem;
 }
 
-/* Join section */
+/* Join */
 
 .join {
   min-height: 100svh;
@@ -988,6 +990,20 @@ The horizontal crop expands equally from the centre to the card edges.
     height: 375px;
     min-height: 375px;
     max-height: 375px;
+  }
+
+  /*
+  Slightly reduce the vertical movement on narrow screens
+  because the cards become wider and taller.
+  */
+
+  .work-grid > .work-card:nth-child(2) .work-image img {
+    transform: translateY(10%) scale(1.32);
+  }
+
+  .work-grid > .work-card:nth-child(2):hover .work-image img,
+  .work-grid > .work-card:nth-child(2):focus-visible .work-image img {
+    transform: translateY(10%) scale(1.36);
   }
 
   .join {
