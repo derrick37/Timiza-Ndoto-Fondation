@@ -473,10 +473,12 @@ blockquote {
   text-decoration: none;
 }
 
+/* Taller landing-page card images */
+
 .work-image {
-  height: 30vh;
-  min-height: 220px;
-  max-height: 350px;
+  height: 40vh;
+  min-height: 290px;
+  max-height: 470px;
   overflow: hidden;
 }
 
@@ -491,17 +493,17 @@ blockquote {
 
 /* Card 1: Academy */
 .work-grid > .work-card:nth-child(1) .work-image img {
-  object-position: center 35%;
+  object-position: center 18%;
 }
 
 /* Card 2: Women empowerment */
 .work-grid > .work-card:nth-child(2) .work-image img {
-  object-position: center 50%;
+  object-position: center 32%;
 }
 
 /* Card 3: Village tournaments */
 .work-grid > .work-card:nth-child(3) .work-image img {
-  object-position: center 20%;
+  object-position: center 38%;
 }
 
 .work-card:hover .work-image img,
@@ -885,7 +887,9 @@ blockquote {
   }
 
   .work-image {
-    height: 330px;
+    height: 440px;
+    min-height: 440px;
+    max-height: 440px;
   }
 
   .programme-story-hero-inner {
@@ -963,7 +967,9 @@ blockquote {
   }
 
   .work-image {
-    height: 280px;
+    height: 375px;
+    min-height: 375px;
+    max-height: 375px;
   }
 
   .join {
