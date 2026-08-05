@@ -491,17 +491,17 @@ blockquote {
 
 /* Card 1: Academy */
 .work-grid > .work-card:nth-child(1) .work-image img {
-  object-position: center 25%;
+  object-position: center 35%;
 }
 
 /* Card 2: Women empowerment */
 .work-grid > .work-card:nth-child(2) .work-image img {
-  object-position: center 40%;
+  object-position: center 50%;
 }
 
 /* Card 3: Village tournaments */
 .work-grid > .work-card:nth-child(3) .work-image img {
-  object-position: center 30%;
+  object-position: center 20%;
 }
 
 .work-card:hover .work-image img,
